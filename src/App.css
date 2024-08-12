@@ -1,38 +1,141 @@
-.App {
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  padding: 20px;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header1{
+  background: url(D:\Extra\Internships\Main_Flow_Technologies\Task1\landingpage\background.avif) no-repeat center center;
+  background-size: cover;
   color: white;
+  padding: 100px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header1 h1{
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header1 p{
+  font-size: 1.5rem;
 }
+
+.header1 button{
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header1 button:hover{
+  background-color: #0056b3;
+}
+
+.features{
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2{
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+
+.feature-item{
+  margin: 20px 0;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.feature-item h3{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p{
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.testimonial {
+  background-color: #e9ecef;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  border-left: 4px solid #007bff;
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
